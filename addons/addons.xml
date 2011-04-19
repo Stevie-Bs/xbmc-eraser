@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.xbmc-eraser" name="XBMC Eraser's Addons" version="1.0.0" provider-name="eraser">
+	<extension point="xbmc.addon.repository" name="XBMC Eraser's Addons">
+		<info compressed="true">http://xbmc-eraser.googlecode.com/svn/addons/addons.xml</info>
+		<checksum>http://xbmc-eraser.googlecode.com/svn/addons/addons.xml.md5</checksum>
+		<datadir zip="true">http://xbmc-eraser.googlecode.com/svn/addons</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>XBMC Addons Eraser's</summary>
+		<description>Install Add-ons from Eraser</description>
+		<disclaimer>Download and install Add-ons from Eraser</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.ambilight" name="Ambilight"
+       version="1.0.0" date="17.03.2011"
+       provider-name="Eraser">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ambilight manager</summary>
+    <description lang="en"></description>
+    <license>GPL</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
