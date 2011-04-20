@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon
+  id="plugin.image.oboobs"
+  version="0.0.6"
+  name="Oboobs.ru"
+  provider-name="Eraser®">
+  <requires>
+        <import addon="xbmc.python" version="1.0"/>
+  </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>image</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Oboobs.ru</summary>
+    <description lang="en">Pictures from Oboobs.ru</description>
+    <summary lang="en">Oboobs.ru</summary>
+    <description lang="en">Изображения с сайта Oboobs.ru</description>
+    </extension>
+</addon>
+
 <addon id="repository.xbmc-eraser" name="XBMC Eraser's Addons" version="1.0.0" provider-name="eraser">
 	<extension point="xbmc.addon.repository" name="XBMC Eraser's Addons">
 		<info compressed="true">http://xbmc-eraser.googlecode.com/svn/addons/addons.xml</info>
@@ -31,23 +51,33 @@
   </extension>
 </addon>
 
-<addon id="script.XMPPnotify"
-       name="XMPP notify"
-       version="0.0.3"
+<addon id="script.FileViewer"
+       name="FileViewer"
+       version="1.0"
        provider-name="Eraser">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
-	<import addon="script.module.pysqlite" version="2.5.6" />
   </requires>
- <extension point="xbmc.python.script" library="default.py">
-  <provides>executable</provides>
+  <extension point="xbmc.python.script" library="default.py">
+   <provides>executable</provides>
   </extension>
-
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">XMPP notify</summary>
-    <description lang="en">XMPP notify</description>
+    <summary lang="en">FileViewer</summary>
+    <description lang="en">View video, audio, picture, text</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.nextaired" name="Next Aired script" version="1.0.1" provider-name="Eraser">
+	<requires>
+		<import addon="xbmc.python" version="1.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Netx Aired script</summary>
+		<description lang="en">Script to get Next Aired episode TvShow from the database.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.twitXBMC"
@@ -68,74 +98,22 @@
   </extension>
 </addon>
 
-<addon id="script.FileViewer"
-       name="FileViewer"
-       version="1.0"
+<addon id="script.XMPPnotify"
+       name="XMPP notify"
+       version="0.0.3"
        provider-name="Eraser">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
+	<import addon="script.module.pysqlite" version="2.5.6" />
   </requires>
-  <extension point="xbmc.python.script" library="default.py">
-   <provides>executable</provides>
+ <extension point="xbmc.python.script" library="default.py">
+  <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">FileViewer</summary>
-    <description lang="en">View video, audio, picture, text</description>
+    <summary lang="en">XMPP notify</summary>
+    <description lang="en">XMPP notify</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="script.nextaired" name="Next Aired script" version="1.0.0" provider-name="Eraser">
-	<requires>
-		<import addon="xbmc.python" version="1.0"/>
-	</requires>
-	<extension point="xbmc.python.library" library="default.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Netx Aired script</summary>
-		<description lang="en">Script to get Next Aired episode TvShow from the database.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="skin.Big-cirrus.Extended" version="1.0.15" name="Big-Cirrus.Extended" provider-name="Eraser">
-	<requires>
-		<import addon="xbmc.gui" version="2.11"/>
-		<import addon="script.logo-downloader" version="2.3.0"/>
-		<import addon="script.library.editor" version="1.0.0" />
-		<import addon="script.recentlyadded" version="1.0.4"/>
-		<import addon="script.randomitems" version="1.0.10"/>
-		<import addon="script.nextaired" version="1.0.0"/>
-		<import addon="script.TvTunes" version="0.8.0" />
-		<import addon="script.skin.news" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.gui.skin" defaultresolution="720p" defaultresolutionwide="720p" defaultthemename="textures.xbt" effectslowdown="0.75" debugging="false"/>
-		<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<minversion app="xbmc">28000</minversion>
-		<summary lang="en">Big-Cirrus.Extended skin by Eraser (Based on Big-Cirrus skin by GMib)</summary>
-		<summary lang="ru">Big-Cirrus.Extended скин от Eraser (В основе скин Big-Cirrus от GMib)</summary>
-		<description lang="en">Big-Cirrus.Extended is a modded version of GMib's Big-Cirrus skin modded. Cirrus is a lightweight skin which has a focus on speed, ease of use and ease of navigation. It also uses TV logos, cleararts, and cdart if you want them.</description>
-		<description lang="ru">Big-Cirrus.Extended - мод скина Big-Cirrus.</description>
-	</extension>
-</addon>
-
-<addon
-  id="plugin.image.oboobs"
-  version="0.0.6"
-  name="Oboobs.ru"
-  provider-name="Eraser®">
-  <requires>
-        <import addon="xbmc.python" version="1.0"/>
-  </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>image</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Oboobs.ru</summary>
-    <description lang="en">Pictures from Oboobs.ru</description>
-    <summary lang="en">Oboobs.ru</summary>
-    <description lang="en">Изображения с сайта Oboobs.ru</description>
-    </extension>
 </addon>
 </addons>
