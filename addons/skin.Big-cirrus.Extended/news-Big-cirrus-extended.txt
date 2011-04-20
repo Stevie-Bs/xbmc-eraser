@@ -1,0 +1,14 @@
+[NEWS][B]1.0.16[/B]
+change OSD icons
+option position control panel
+
+[B]1.0.15[/B]
+next aired episode
+
+[B]1.0.13[/B]
+weekend weather
+Next Aired TvShows
+on/off button DB Editor, Cinema Experience
+
+[B]1.0.12[/B]
+My Picture Database integration
