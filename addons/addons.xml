@@ -68,7 +68,7 @@
   </extension>
 </addon>
 
-<addon id="script.nextaired" name="Next Aired script" version="1.0.1" provider-name="Eraser">
+<addon id="script.nextaired" name="Next Aired script" version="1.0.2" provider-name="Eraser">
 	<requires>
 		<import addon="xbmc.python" version="1.0"/>
 	</requires>
